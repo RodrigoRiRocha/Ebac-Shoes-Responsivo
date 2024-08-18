@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+
+    background-color: #F8F4F1;
+}
+
+
+
+
+
+.cabeçalho {
+
+    width: 100%;
+    height: 60px;
+    background-color: #8B5E3C;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25%;
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+nav a {
+
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.sobre img {
+    height: 400px;
+    margin-top: 2%;
+    border-radius: 12px;
+}
+
+.sobre-a-loja {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    margin-left: 3%;
+    margin-top: 2%;
+    color: #8B5E3C;
+
+}
+
+.linha-sobre {
+    border-top: 2px solid #8B5E3C;
+}
+
+.container-sapatos {
+    display: flex;
+    gap: 1%;
+
+}
+
+.container-sapatos h3 {
+    font-style: bold;
+    margin-top: 5%;
+}
+
+.container-sapatos p {
+    margin-top: 5%;
+}
+
+.container-sapatos img {
+    border-radius: 12px;
+    height: 250px;
+}
+
+.container-sapatos button {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    background-color: #8B5E3C;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 5%;
+    cursor: pointer;
+
+}
+
+.container-sapatos button:hover {
+    background-color: #8B5E3C;
+}
+
+.produtos {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+    margin-top: 3%;
+}
+
+
+.produtos h2 {
+    margin-bottom: 1%;
+    color: #8B5E3C;
+}
+
+.produtos .linha-sobre {
+    margin-bottom: 3%;
+}
+
+.rodape {
+
+    background-color: #8B5E3C;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 10px 0;
+
+    margin-top: 5%;
+    bottom: 0;
+    font-size: 14px;
+
+}
+
+@media screen and (max-width: 640px) {
+    .cabeçalho {
+        height: auto;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 0px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        margin-top: 5%;
+        width: 100%;
+        padding: 20px;
+    }
+
+
+    .sobre-a-loja {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+
+
+
+    }
+
+    .linha-sobre {
+
+        margin-bottom: 16px;
+    }
+
+    .container-sapatos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .container-sapatos button {
+        padding: 5px;
+        width: 100%;
+        border: none;
+        margin-top: 5%;
+        cursor: pointer;
+
+    }
+
+    .container-sapatos img {
+        border-radius: 12px;
+        height: 200px;
+        width: 100%;
+        object-fit: fill;
+    }
+
+    .produtos {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+
+        margin-top: 3%;
+        padding: 20px;
+    }
+
+    .produtos .linha-sobre {
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10%;
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+
+        padding: 60px;
+        align-items: center;
+    }
+
+    .sobre img {
+        height: 400px;
+        margin-top: 0px;
+        border-radius: 12px;
+        width: 100%;
+
+    }
+
+    .sobre-a-loja {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 3%;
+        margin-top: 40px;
+        color: #8B5E3C;
+    }
+
+    .linha-sobre {
+        border-top: 2px solid #8B5E3C;
+
+    }
+
+    .container-sapatos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    .container-sapatos img {
+        border-radius: 12px;
+        height: 250px;
+        width: 100%;
+    }
+
+
+    .produtos {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 60px;
+        margin-top: 3%;
+    }
+
+}
